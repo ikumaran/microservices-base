@@ -6,7 +6,6 @@ spring:
   cloud:
     config:
       name: twitter-to-kafka-service,config-client
+      uri: http://localhost:8887
       username: user
-      password: pass
-  config:
-    import: optional:configserver:http://localhost:8887
+      password: '{cipher}50ce1eae041ca12957788e5187c6e9185cbe421abb38e7a76832b3bd037703db'

@@ -5,16 +5,3 @@ logging:
   level:
     ROOT: INFO
     org.spring.framework.cloud.config: DEBUG
-
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/ikumaran/microservices-config-server.git
-          skipSslValidation: true
-          clone-on-start: true
-  security:
-    user:
-      name: user
-      password: pass

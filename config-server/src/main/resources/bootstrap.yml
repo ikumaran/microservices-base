@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ikumaran/microservices-config-server.git
+          skipSslValidation: true
+          clone-on-start: true
+  security:
+    user:
+      name: user
+      password: '{cipher}ad5bbf323a09812214a13f6bc7ed49e84d64de2fde1c3757ccd876e2314689e8'
+# move this to envi variable - ENCRYPT_KEY
+encrypt:
+  key: 'password'
